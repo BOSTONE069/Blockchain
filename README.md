@@ -1,2 +1,2 @@
 # Blockchain
-WEB 3.0 SOLIDIYT
+WEB 3.0 SOLIDITY
