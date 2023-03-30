@@ -35,6 +35,6 @@ contract web3ClubsToken {
     }
 
     function averagenumber() public view returns (int256) {
-        return SignedMath.average(int256(num3), int256(num4));
+        return SignedMath.average(int256(num1), int256(num2));
     }
 }
