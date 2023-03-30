@@ -4,14 +4,26 @@
 // The following line specifies that the Solidity compiler should only be used from version v0.8.13 to v0.9.0.
 pragma solidity ^0.8.13;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
+// The following line imports the SafeMath library from the OpenZeppelin smart contract library.
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-
+// The following contract is named web3ClubsToken.
 contract web3ClubsToken {
 
-    // global var
+    // The following line specifies that the SafeMath library should be used for uint256 data types in this contract.
+    using SafeMath for uint256;
 
-    uint public Totalsupply = 10000;
-    string public tokenName = "web3ClubToken";
-    uint public balances;
+    // The following two lines define two uint256 variables named num1 and num2.
+    uint256 num1 = 10;
+    uint256 num2 = 20;
+
+    // The following function is named addnumber and returns the sum of num1 and num2 using the SafeMath add function.
+    function addnumber() public view returns (uint256) {
+        return SafeMath.add(num1, num2);
+    }
+
+
+    function subnumber() public view returns (uint256) {
+        return SafeMath.sub(num2, num1); 
+    }
 }
