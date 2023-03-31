@@ -20,19 +20,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "averagenumber",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "subnumber",
 				"outputs": [
 					{
@@ -58,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"imports.sol": "web3ClubsToken"
+			"web3ClubToken.sol": "web3ClubsToken"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -80,20 +67,12 @@
 				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		},
-		"@openzeppelin/contracts/utils/math/SignedMath.sol": {
-			"keccak256": "0xf92515413956f529d95977adc9b0567d583c6203fc31ab1c23824c35187e3ddc",
+		"web3ClubToken.sol": {
+			"keccak256": "0xf434629a0595492d0e37f5060ee1ee7371f1c9fb56ab0ea9b0e1e71bc15464bc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c50fcc459e49a9858b6d8ad5f911295cb7c9ab57567845a250bf0153f84a95c7",
-				"dweb:/ipfs/QmcEW85JRzvDkQggxiBBLVAasXWdkhEysqypj9EaB6H2g6"
-			]
-		},
-		"imports.sol": {
-			"keccak256": "0xfe2811167ee35610be573e0672a395c277cb39418e865db060b7d1c69cd77e05",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://8daf1ee41b6a4a0710725205ea29041d0aae393cf30ba58fa210045e9a6b2e01",
-				"dweb:/ipfs/QmYRBmC5GnHxkoPsuuJKpTSRtoPGsPdacMh8FX4pJH8oj5"
+				"bzz-raw://31f7958710a4608552f7e2163c94188127cce76634821017a86c685691efbe8e",
+				"dweb:/ipfs/QmcK4dFvZkoRbEhTLhLEAcqVH8NgGyDpdYPPGqGWBCMH7N"
 			]
 		}
 	},
