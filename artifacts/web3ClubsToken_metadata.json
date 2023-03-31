@@ -6,8 +6,33 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "TRANSFER",
+				"type": "event"
+			},
+			{
 				"inputs": [],
-				"name": "addnumber",
+				"name": "balancesOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,7 +45,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "subnumber",
+				"name": "decimals",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -28,6 +53,81 @@
 						"type": "uint256"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totatSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferFrom",
+				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			}
@@ -45,7 +145,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"web3ClubToken.sol": "web3ClubsToken"
+			"web3token.sol": "web3ClubsToken"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -67,12 +167,12 @@
 				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		},
-		"web3ClubToken.sol": {
-			"keccak256": "0xf434629a0595492d0e37f5060ee1ee7371f1c9fb56ab0ea9b0e1e71bc15464bc",
+		"web3token.sol": {
+			"keccak256": "0x7df40946bee85c63b84fbc619a9992d4309c4c9b600da524010dcb4eb44bd8c7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://31f7958710a4608552f7e2163c94188127cce76634821017a86c685691efbe8e",
-				"dweb:/ipfs/QmcK4dFvZkoRbEhTLhLEAcqVH8NgGyDpdYPPGqGWBCMH7N"
+				"bzz-raw://3db64989854fc4d04ad362e557641a155fdb0dc35de6ad8cfc4e475da6fc504d",
+				"dweb:/ipfs/QmXrNqYX48GZ3mbq4TeD8uPvpaQbS9wtGW3dwTx8wco5Dk"
 			]
 		}
 	},
