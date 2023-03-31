@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addnumber",
+				"name": "balancesOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,20 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "averagenumber",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "subnumber",
+				"name": "decimals",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -41,6 +28,81 @@
 						"type": "uint256"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totatSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_reciever",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferFrom",
+				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			}
@@ -58,7 +120,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"imports.sol": "web3ClubsToken"
+			"web3token.sol": "web3ClubsToken"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -80,20 +142,12 @@
 				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		},
-		"@openzeppelin/contracts/utils/math/SignedMath.sol": {
-			"keccak256": "0xf92515413956f529d95977adc9b0567d583c6203fc31ab1c23824c35187e3ddc",
+		"web3token.sol": {
+			"keccak256": "0xb7a4a1cf4824e7fb12027d2cc3b6192ec04fe87a2f97800cc99e11e94eb14694",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c50fcc459e49a9858b6d8ad5f911295cb7c9ab57567845a250bf0153f84a95c7",
-				"dweb:/ipfs/QmcEW85JRzvDkQggxiBBLVAasXWdkhEysqypj9EaB6H2g6"
-			]
-		},
-		"imports.sol": {
-			"keccak256": "0xfe2811167ee35610be573e0672a395c277cb39418e865db060b7d1c69cd77e05",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://8daf1ee41b6a4a0710725205ea29041d0aae393cf30ba58fa210045e9a6b2e01",
-				"dweb:/ipfs/QmYRBmC5GnHxkoPsuuJKpTSRtoPGsPdacMh8FX4pJH8oj5"
+				"bzz-raw://57553937c51e8edf9cab341ae758fd00188631296e2a5035e0096dd7bd4faae1",
+				"dweb:/ipfs/QmQTABMjba96QiJ2rkQp2Vmh3H9NAGim4ptujzUtMPpfXb"
 			]
 		}
 	},
