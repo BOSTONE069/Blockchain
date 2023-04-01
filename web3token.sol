@@ -44,6 +44,15 @@ contract web3ClubsToken {
     }
 
     function transferFrom(address _sender, address _reciever, uint _amount) public view returns (uint) {
+        require(_value <= balances[_sender]);
+        require(_value <= allowed[_sender][msg.sender]);
+
+        balances[_sender] = balances[_sender].sub(_value);
+        balances[_reciever] = balances[_reciever].add(_value);
+        allowed[_sender][msg.sender] = allowed[_sender][msg.sender].sub(_value);
+        emit Transfer(_sender, _reciever, _value);
+
+    return true;
 
     }
 }
