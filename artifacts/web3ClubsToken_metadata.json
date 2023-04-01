@@ -6,44 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_totalSupply",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "TRANSFER",
-				"type": "event"
-			},
-			{
 				"inputs": [],
-				"name": "decimalFactor",
+				"name": "addnumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -56,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "decimals",
+				"name": "subnumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -65,98 +29,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "symbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "tokenName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_receiver",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_sender",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_receiver",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -173,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"tokenweb3.sol": "web3ClubsToken"
+			"web3ClubToken.sol": "web3ClubsToken"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -195,11 +67,12 @@
 				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		},
-		"tokenweb3.sol": {
-			"keccak256": "0x2261bda409b40c1e2e4221b6e37d64d5b84759254c3dede5c6ad2913582f8c90",
+		"web3ClubToken.sol": {
+			"keccak256": "0xf434629a0595492d0e37f5060ee1ee7371f1c9fb56ab0ea9b0e1e71bc15464bc",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://3767a46821a194170254cf8b032ee605b4927925e163bf40269929987f494b2c",
-				"dweb:/ipfs/QmeZy7sjgWV9A4SVbdKpezb5r9BM6hNBywwyViQ5KcWBje"
+				"bzz-raw://31f7958710a4608552f7e2163c94188127cce76634821017a86c685691efbe8e",
+				"dweb:/ipfs/QmcK4dFvZkoRbEhTLhLEAcqVH8NgGyDpdYPPGqGWBCMH7N"
 			]
 		}
 	},
