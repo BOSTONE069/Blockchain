@@ -52,7 +52,8 @@ contract web3ClubsToken {
         return success;
     }
 
-    function mintToken() public returns (uint)  {
+    function mintToken(address _to, uint256 _amount) public onlyOwner {
+        _mint(_to, _amount);
 
     }
 

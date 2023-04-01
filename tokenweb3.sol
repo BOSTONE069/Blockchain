@@ -15,7 +15,7 @@ contract web3ClubsToken {
     string public symbol = "WCT";
     uint public decimals = 18;
     uint public decimalFactor = 10 ** uint256(decimals);
-     uint public totalSupply = 1000000 * decimalFactor;
+    uint public totalSupply = 1000000 * decimalFactor;
 
     // Declare an event for when tokens are transferred
     event TRANSFER(address indexed _from, address indexed _to, uint256 _value);
@@ -29,6 +29,7 @@ contract web3ClubsToken {
     // Declare the initial balances for the contract creator
     constructor(uint _totalSupply) public {
         balances[msg.sender] = totalSupply;
+        _totalSupply = totalSupply;
     }
 
     // Declare the transfer function to send tokens from the sender to the receiver
