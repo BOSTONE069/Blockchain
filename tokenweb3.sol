@@ -10,11 +10,12 @@ contract web3ClubsToken {
     // The following line specifies that the SafeMath library should be used for uint256 data types in this contract.
     using SafeMath for uint256;
 
-    // Declare the token properties
-    uint public totalSupply = 10000;
+    // Declare the token properties 
     string public tokenName = "web3ClubsToken";
     string public symbol = "WCT";
     uint public decimals = 18;
+    uint public decimalFactor = 10 ** uint256(decimals);
+     uint public totalSupply = 1000000 * decimalFactor;
 
     // Declare an event for when tokens are transferred
     event TRANSFER(address indexed _from, address indexed _to, uint256 _value);
@@ -26,8 +27,9 @@ contract web3ClubsToken {
     mapping (address => mapping (address => uint256)) allowed;
 
     // Declare the initial balances for the contract creator
-    constructor() public {
+    constructor(uint _totalSupply) public {
         balances[msg.sender] = totalSupply;
+        _totalSupply = totalSupply;
     }
 
     // Declare the transfer function to send tokens from the sender to the receiver

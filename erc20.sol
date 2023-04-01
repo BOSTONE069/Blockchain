@@ -7,6 +7,8 @@ pragma solidity ^0.8.13;
 // The following line imports the SafeMath library from the OpenZeppelin smart contract library.
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
+import "@openzeppelin/contracts/access/Ownable.sol";
+
 
 
 // The following contract is named web3ClubsToken.
@@ -20,11 +22,11 @@ contract web3ClubsToken {
     string public tokenName = "web3ClubsToken";
     string public symbol = "WCT";
     uint public decimals = 18; //decimal numbers
-   // uint public balancesOf; // balance of address 
     uint public decimalFactor = 10 ** uint256(decimals);
 
 
     event Transfer(address indexed _from, address indexed _to, uint256 _amount);
+    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
     //mapping
     mapping (address => uint256) public balancesOf;
@@ -42,6 +44,16 @@ contract web3ClubsToken {
 
     function transferFrom() public view {
         
+    }
+
+    function approve(address _spender, uint _value) public returns (bool success){
+        allowance[msg.sender][_spender] = _value;
+        emit Approval(msg.sender, _spender, _value);
+        return success;
+    }
+
+    function mintToken() public returns (uint)  {
+
     }
 
     
