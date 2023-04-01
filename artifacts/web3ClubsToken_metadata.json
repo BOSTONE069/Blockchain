@@ -196,10 +196,10 @@
 			]
 		},
 		"tokenweb3.sol": {
-			"keccak256": "0xed6aa9f5ed3556d19ef1f3cddf840b05f03a0966b828afa23706d8475941eecb",
+			"keccak256": "0x2261bda409b40c1e2e4221b6e37d64d5b84759254c3dede5c6ad2913582f8c90",
 			"urls": [
-				"bzz-raw://b426c30ebf3ce2a99a708c8d8015a4cb5029246fdcf3bdbb7cb18801a567ce89",
-				"dweb:/ipfs/QmTyXDXx76wCQYKSHbEh6mqVAFdZAZHeFrcEKuW7DHbu9T"
+				"bzz-raw://3767a46821a194170254cf8b032ee605b4927925e163bf40269929987f494b2c",
+				"dweb:/ipfs/QmeZy7sjgWV9A4SVbdKpezb5r9BM6hNBywwyViQ5KcWBje"
 			]
 		}
 	},

@@ -29,7 +29,6 @@ contract web3ClubsToken {
     // Declare the initial balances for the contract creator
     constructor(uint _totalSupply) public {
         balances[msg.sender] = totalSupply;
-        _totalSupply = totalSupply;
     }
 
     // Declare the transfer function to send tokens from the sender to the receiver
