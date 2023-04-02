@@ -662,11 +662,11 @@
 			]
 		},
 		"minttoken.sol": {
-			"keccak256": "0x6baec307e2e2c4ea9d61e28d35d497db81e79d440dc4e366ead9a1bea869db1b",
+			"keccak256": "0x9f1bb188408ce055ef088911375850447a0cb6f0f6f63ae2e85f6927ee868a07",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://735596d07313de62246ff97a75e045da398ef4e8801cae4e0043aebe585a268b",
-				"dweb:/ipfs/QmPtG9nhff4HFe7gMoGz6fQh28LM5LMPU64kiywKDN8k6N"
+				"bzz-raw://cbffb7a85828318ccaa50c2f6dd5199b012948f690d10e38c585a53dabc87a68",
+				"dweb:/ipfs/QmWfa5ZuzCs2Q3biWeCZvCrUsAe6dQ4sUaTwVtmFRDjvSR"
 			]
 		}
 	},
